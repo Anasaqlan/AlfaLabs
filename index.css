@@ -2,6 +2,11 @@
         padding: 0;
         margin:0;
     }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     #head{
         background: linear-gradient(rgba(0,0,0,0.5),#009688),url(image/back.jpg);
         background-size: cover;
@@ -520,8 +525,11 @@
 
     /*------- contact us--------*/
     #footer{
+        /* height:25vh; */
     padding: 100px;
     background:#efefef;
+    display: flex;
+    align-items: center;
         
     }
     .footer-r{
@@ -529,6 +537,7 @@
         margin:0 auto;
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         flex-wrap: wrap;
         font-family: 'Poppins', sans-serif;
         text-transform: capitalize;
@@ -540,7 +549,7 @@
 
     }
     .footer-right{
-        text-align: right;
+        text-align: left;
     }
     .footer-right h1,p{
         margin-bottom: 7px;
@@ -566,8 +575,11 @@
         font-weight: 600px;
         
     }
+   
     .social-icons {
+        width:100%;
         text-align: center;
+        background: #009688;
 
     }
     .social-icons i{
@@ -595,7 +607,7 @@
 
     }
     .social-icons p span{
-        color:#009688;
+        color:#fff;
         font-size: 17px;
 
     }
@@ -603,6 +615,11 @@
         .footer-left, .footer-right{
             flex-basis: 100%;
             font-size: 14px;
+        }
+        section .social-icons{
+            flex-direction: column;
+            align-items: center;
+            font-size: 10px;
         }
     }
 
